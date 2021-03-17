@@ -2,7 +2,4 @@
 
 Repositório para a disciplina de Projeto Integrador 1
 
-Contribuintes:
--> Juliana Eleutéria
--> Maria Alice
--> Maria Eugênia
+Contribuintes: Juliana Eleutéria, Maria Alice e Maria Eugênia
