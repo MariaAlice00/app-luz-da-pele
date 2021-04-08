@@ -1,0 +1,19 @@
+body{
+    background-color: #FFDEED;
+    margin: 0;
+}
+ul{
+    list-style: none; /*tirar lista*/
+    display: flex; /*deixar na horizontal*/
+}
+
+li{
+    margin: 0 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
