@@ -2,7 +2,7 @@
 Luz da Pele
 
 2. Membros da equipe
-Juliana
+Juliana Eleutéria
 Maria Alice
 Maria Eugênia Lopes Mendes
 
@@ -10,7 +10,7 @@ Maria Eugênia Lopes Mendes
 
 SCRUM MASTER: Maria Alice Vieira Lima
 PRODUCT OWNER: Maria Eugênia Lopes Mendes
-TIME: Juliana, Maria Alice Vieira Lima e Maria Eugênia Lopes Mendes
+TIME: Juliana Eleutéria, Maria Alice Vieira Lima e Maria Eugênia Lopes Mendes
 
 4. Product Backlog – Loja virtual de dermocosméticos
 
