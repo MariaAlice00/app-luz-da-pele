@@ -1,3 +1,12 @@
+<p>
+ Membros
+ <ul>
+  <li>Juliana Eleutéria (Projeto Integrador 1)</li>
+  <li>Maria Alice (Projeto Integrador 1, Engenharia de Software 2, Programação para Internet 1)</li>
+  <li>Maria Eugênia (Projeto Integrador 1, Engenharia de Software 2, Programação para Internet 1)</li>
+ </ul>
+</p>
+
 #Membros
 ##Juliana Eleutéria (Projeto Integrador 1)
 ##Maria Alice (Projeto Integrador 1, Engenharia de Software 2, Programação para Internet 1)
