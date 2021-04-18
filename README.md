@@ -1,7 +1,3 @@
-# ifpi_ads_projeto_integrador1
-
-Repositório para a disciplina de Projeto Integrador 1
-
 - Membros:
 Juliana Eleutéria (Projeto Integrador 1)
 Maria Alice (Projeto Integrador 1, Engenharia de Software 2, Programação para Internet 1)
