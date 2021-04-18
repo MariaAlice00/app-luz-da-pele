@@ -1,45 +1,45 @@
-1.	Nome da equipe e do produto
+1. Nome da equipe e do produto
 Luz da Pele
 
-2.	Membros da equipe
+2. Membros da equipe
 Juliana
 Maria Alice
 Maria Eugênia Lopes Mendes
 
-3.	Papel de cada integrante
+3. Papel de cada integrante
 
 SCRUM MASTER: Maria Alice Vieira Lima
 PRODUCT OWNER: Maria Eugênia Lopes Mendes
 TIME: Juliana, Maria Alice Vieira Lima e Maria Eugênia Lopes Mendes
 
-4.	Product Backlog – Loja virtual de dermocosméticos
+4. Product Backlog – Loja virtual de dermocosméticos
 
-4.1	Nome do produto: 
+4.1 Nome do produto: 
 LUZ DA PELE
 
-5.	Prioridades máximas do produto – BANCO DE DADOS
+5. Prioridades máximas do produto – BANCO DE DADOS
 
 5.1 ÁREA ADMINISTRADOR
-•	CADASTRO DO ADMINISTRADOR: login com senha para segurança da loja, com linha de acesso restrita aos administradores do produto.
-•	CAMPO FINANCEIRO: área de balanços contábeis para verificação de despesas e receitas.
-•	CAMPO DE FORNECEDORES: área para cadastro e acompanhamento de contratos.
-•	CONTROLE DE PRODUTOS: área para cadastro de produtos da loja, com estipulação de preços.
+• CADASTRO DO ADMINISTRADOR: login com senha para segurança da loja, com linha de acesso restrita aos administradores do produto.
+• CAMPO FINANCEIRO: área de balanços contábeis para verificação de despesas e receitas.
+• CAMPO DE FORNECEDORES: área para cadastro e acompanhamento de contratos.
+• CONTROLE DE PRODUTOS: área para cadastro de produtos da loja, com estipulação de preços.
 
 5.2 ÁREA CLIENTE
-•	CATALOGO DE PRODUTOS: área para o cliente escolher os produtos que deseja.
-•	CAMPO DE COMPRA: área onde o cliente pode efetuar sua compra e pagamento.
-•	CAMPO DE CONTATOS: área pra o cliente acessar os diferentes meios de comunicação com a loja.
+• CATALOGO DE PRODUTOS: área para o cliente escolher os produtos que deseja.
+• CAMPO DE COMPRA: área onde o cliente pode efetuar sua compra e pagamento.
+• CAMPO DE CONTATOS: área pra o cliente acessar os diferentes meios de comunicação com a loja.
 
-6.	Funcionalidades do produto
+6. Funcionalidades do produto
 
-6.1	User Stories
+6.1 User Stories
 
 Quem ?	Administrador	
 
 O que ?	Acessar histórico de vendas - Para que ? Para ter controle sobre os lucros
-O que ?	Acessar fornecedores e contratos - Para que ?	Para auxiliar no controle de estoque
+O que ?	Acessar fornecedores e contratos - Para que ? Para auxiliar no controle de estoque
 O que ?	Cadastrar produtos - Para que ? Para ter produtos disponíveis no site para compra
-O que ?Lista de produtos cadastrados - Para que ?	Para auxiliar no controle de estoque
+O que ?Lista de produtos cadastrados - Para que ? Para auxiliar no controle de estoque
 O que ?	Acessar lista de clientes cadastrados  - Para que ? Para ter um controle dos usuários que acessam o site
 O que ?	Cadastrar uma conta e acessar o login - Para que ? Para conseguir acessar campo do administrador, fazer alterações e acessar informações
 
@@ -54,7 +54,7 @@ O que ?	Escolher uma forma de pagamento - Para que ? Para finalizar a compra
 O que ?	Conseguir mudar, se preferir, endereço de entrega - Para que ? Para deixar o cadastro atualizado
 
 
-6.2	Técnica utilizada para a elicitação dos requisitos
+6.2 Técnica utilizada para a elicitação dos requisitos
 
 Questionários 
 Direcionados a área de produto dermocosméticos, 
@@ -63,5 +63,5 @@ Com perguntas objetivas, ou seja, explanação quantitativas do gosto dos client
 Entrevistas
 Perguntas subjetivas para uma explanação qualitativa sobre diferentes produtos dermocosméticos.
 
-7.	Tempo estimado
+7. Tempo estimado
 O produto será entregue em fatias, a cada 2 semanas terá uma prestação de contas com o cliente. 
