@@ -38,6 +38,7 @@
     Protótipos das Telas 
     <ul>
         <li><a href="https://www.figma.com/file/7UP8WvC0JhIOiBYa94wWN7/Luz-da-Pele?node-id=0%3A1">Administrador</a></li>
+        <li><a href="https://www.figma.com/file/7UP8WvC0JhIOiBYa94wWN7/Luz-da-Pele?node-id=21%3A2">Cliente</a></li>
     </ul> 
 </p>
 
