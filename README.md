@@ -40,3 +40,10 @@
         <li><a href="https://www.figma.com/file/7UP8WvC0JhIOiBYa94wWN7/Luz-da-Pele?node-id=0%3A1">Administrador</a></li>
     </ul> 
 </p>
+
+<p>
+    Product Backlog
+    <ul>
+        <li><a href="https://docs.google.com/document/d/1oNrlSS_ZquPRGRR23zFicdo0t4x_U_pV_HLgPFpgRk0/edit?usp=sharing"></a>Arquivo</li>
+    </ul> 
+</p>
