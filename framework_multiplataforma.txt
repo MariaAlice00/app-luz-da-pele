@@ -1,6 +1,0 @@
-Ordem do mais simples ao mais completo:
-
-Pure
-Semantic UI
-Materialize
-Bootstrap
