@@ -1,9 +1,6 @@
-<p>
-    Nome do software
-    <ul>
-        <li>Luz da Pele</li>
-    </ul> 
-</p>
+<h1>Luz da Pele</h1>
+
+<p>Projeto pedido para a disciplina de Projeto Integrador do curso de Análise e Desenvolvimento de Sistemas - 3° período</p>
 
 <p>
     Membros
