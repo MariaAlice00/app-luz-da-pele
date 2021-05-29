@@ -3,12 +3,12 @@
 {% block content %}
 
 <div class="produto">
-    <h2>{{ produto.nome }}</h2>
+    <h2 style="text-align: center;">{{ produto.nome }}</h2>
     <div class="corpo">
         <p><strong>Categoria:</strong> {{ produto.categoria }}</p>
         <p><strong>Marca:</strong> {{ produto.marca }}</p>
         <p><strong>Base:</strong> {{ produto.base }}</p>
-        <p><strong>Valor:</strong> {{ produto.valor }}</p>
+        <p><strong>Valor:</strong> R$ {{ produto.valor }}</p>
         <p><strong>Características:</strong> {{ produto.caracteristicas }}</p>
         <p><strong>Indicação:</strong> {{ produto.indicacao }}</p>
         <p><strong>Utilidade:</strong> {{ produto.utilidade }}</p>

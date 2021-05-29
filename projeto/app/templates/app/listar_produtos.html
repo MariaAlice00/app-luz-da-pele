@@ -2,16 +2,17 @@
 {% block content %}
 
 <div class="col-8 m-auto pt-4 pb-2 text-center" >
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Nome</th>
-                    <th scope="col">Marca</th>
-                    <th scope="col">Valor</th>
-                    <th scope="col">Ações</th>
-                </tr>
-            </thead>
-            <tbody>
+    <h1>Lista de Produtos</h1>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
             {% for produto in produtos %}
                 <tr>
                     <td>{{produto.nome}}</td>
@@ -22,12 +23,14 @@
                         {% if user.is_authenticated %}
                             <a class="btn btn-primary" href="{% url 'editar_produto' pk=produto.pk %}">Editar</a>
                         {% endif %}
-                        <a href="#" class="btn btn-danger btnDel">Deletar</a>
+                        <a href="{% url 'remover_produto' pk=produto.pk %}" class="btn btn-danger btnDel">Deletar</a>
                     </td>
                 </tr>
             {% endfor %}
-            </tbody>
-        </table>
+        </tbody>
+    </table>
 </div>
+{% load static %}
+<script src="{% static 'js/app.js' %}"></script>
 
 {% endblock %}

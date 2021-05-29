@@ -8,12 +8,21 @@
     </head>
     <body>
         <div class="page-header">
-            {% if user.is_authenticated %}
-                <a href="{% url 'novo_produto' %}" class="top-menu">
-                    <input type="button" value="Novo Produto">
-                </a>
-            {% endif %}
-            <h1><a href="/">Luz da Pele</a></h1>
+            <ul class="lista">
+                <li>
+                    <h1><a href="/">Luz da Pele</a></h1>
+                </li>
+                <li><a href="#" class="links">Produtos</a></li>
+                <li><a href="#" class="links">Clientes</a></li>
+                <li><a href="#" class="links">Vendas</a></li>
+                <li>
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'novo_produto' %}" class="top-menu">
+                            <input type="button" value="Novo Produto">
+                        </a>
+                    {% endif %}
+                </li>
+            </ul>
         </div>
 
         {% block content %}

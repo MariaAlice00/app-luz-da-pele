@@ -37,3 +37,9 @@ def editar_produto(request, pk):
     else:
         form = ProdutoForm(instance=produto)
     return render(request, 'app/editar_produto.html', {'form': form})
+
+
+def remover_produto(request, pk):
+    produto = get_object_or_404(Produto, pk=pk)
+    produto.delete()
+    return redirect('listar_produtos')
