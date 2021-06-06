@@ -24,6 +24,7 @@ body {
 }
 .lista li {
     display: inline-block;
+    margin-left: 32px;
 }
 
 .lista li a {

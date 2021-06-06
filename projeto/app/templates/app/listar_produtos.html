@@ -21,7 +21,7 @@
                     <td>
                         <a href="{% url 'detalhes_produto' pk=produto.pk %}" class="btn btn-dark">Visualizar</a>
                         {% if user.is_authenticated %}
-                            <a class="btn btn-primary" href="{% url 'editar_produto' pk=produto.pk %}">Editar</a>
+                            <a href="{% url 'editar_produto' pk=produto.pk %}" class="btn btn-primary">Editar</a>
                         {% endif %}
                         <a href="{% url 'remover_produto' pk=produto.pk %}" class="btn btn-danger btnDel">Deletar</a>
                     </td>
