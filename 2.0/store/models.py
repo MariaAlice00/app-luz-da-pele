@@ -52,6 +52,17 @@ class Pedido(models.Model):
         return str(self.id)
 
     @property
+    def vazio(self):
+        vazio = False
+        pedidoitens = self.pedidoitem_set.all()
+        c = 0
+        for i in range(len(pedidoitens)):
+            c += 1
+        if c == 0:
+            vazio = True
+        return vazio
+
+    @property
     def get_cart_total(self):
         pedidoitens = self.pedidoitem_set.all()
         total = sum([item.get_total for item in pedidoitens])
@@ -74,6 +85,11 @@ class PedidoItem(models.Model):
     def get_total(self):
         total = self.produto.valor * self.quantidade
         return total
+
+    @property
+    def get_quantidade(self):
+        quant = self.quantidade
+        return quant
 
 
 class EnderecoEntrega(models.Model):

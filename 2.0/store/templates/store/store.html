@@ -8,7 +8,7 @@
 			<div class="box-element product">
 				<h6><strong>{{produto.name}}</strong></h6>
 				<hr>
-				<button  class="btn btn-outline-secondary add-btn">Adicionar</button>
+				<button data-product={{produto.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Adicionar</button>
 				<a class="btn btn-outline-success" href="#">Visualizar</a>
 				<h4 style="display: inline-block; float: right;"><strong>R${{produto.valor|floatformat:2}}</strong></h4>
 			</div>
