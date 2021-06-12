@@ -12,7 +12,7 @@ def store(request):
         cartItems = pedido.get_cart_items
     else:
         items = []
-        pedido = {'get_cart_total': 0, 'get_cart_items': 0, 'vazio': False}
+        pedido = {'get_cart_total': 0, 'get_cart_items': 0, 'vazio': True}
         cartItems = pedido['get_cart_items']
 
     produtos = Produto.objects.all()
@@ -28,7 +28,7 @@ def cart(request):
         cartItems = pedido.get_cart_items
     else:
         items = []
-        pedido = {'get_cart_total': 0, 'get_cart_items': 0, 'vazio': False}
+        pedido = {'get_cart_total': 0, 'get_cart_items': 0, 'vazio': True}
         cartItems = pedido['get_cart_items']
 
     context = {'items': items, 'pedido': pedido, 'cartItems': cartItems}
@@ -43,7 +43,7 @@ def checkout(request):
         cartItems = pedido.get_cart_items
     else:
         items = []
-        pedido = {'get_cart_total': 0, 'get_cart_items': 0, 'vazio': False}
+        pedido = {'get_cart_total': 0, 'get_cart_items': 0, 'vazio': True}
         cartItems = pedido['get_cart_items']
 
     context = {'items': items, 'pedido': pedido, 'cartItems': cartItems}
