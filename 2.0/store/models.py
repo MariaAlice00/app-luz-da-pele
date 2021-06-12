@@ -21,7 +21,7 @@ class Produto(models.Model):
     categoria = models.CharField(max_length=100, choices=CATEGORY_CHOICES, verbose_name="Categoria")
     marca = models.CharField(max_length=200, verbose_name="Marca")
     base = models.CharField(max_length=200, verbose_name="Base")
-    valor = models.FloatField(verbose_name="Valor")
+    valor = models.DecimalField(max_digits=7, decimal_places=2, verbose_name="Valor")
     caracteristicas = models.TextField(verbose_name="Características")
     indicacao = models.TextField(verbose_name="Indicação")
     utilidade = models.TextField(verbose_name="Utilidade")
@@ -52,17 +52,6 @@ class Pedido(models.Model):
         return str(self.id)
 
     @property
-    def vazio(self):
-        vazio = False
-        pedidoitens = self.pedidoitem_set.all()
-        c = 0
-        for i in range(len(pedidoitens)):
-            c += 1
-        if c == 0:
-            vazio = True
-        return vazio
-
-    @property
     def get_cart_total(self):
         pedidoitens = self.pedidoitem_set.all()
         total = sum([item.get_total for item in pedidoitens])
@@ -91,15 +80,3 @@ class PedidoItem(models.Model):
         quant = self.quantidade
         return quant
 
-
-class EnderecoEntrega(models.Model):
-    cliente = models.ForeignKey(Cliente, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Cliente")
-    pedido = models.ForeignKey(Pedido, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Pedido")
-    endereco = models.CharField(max_length=200, verbose_name="Endereço")
-    cidade = models.CharField(max_length=200, verbose_name="Cidade")
-    estado = models.CharField(max_length=200, verbose_name="Estado")
-    cep = models.CharField(max_length=200, verbose_name="CEP")
-    data_add = models.DateTimeField(auto_now_add=True, verbose_name="Data da Adição")
-
-    def __str__(self):
-        return self.endereco
