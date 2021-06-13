@@ -15,7 +15,7 @@
 
         function getToken(name){
             var cookieValue = null;
-            if(document.cookie && document.cookie != ''){
+            if(document.cookie && document.cookie !== ''){
                 var cookies = document.cookie.split(';');
                 for(var i = 0; i < cookies.length; i++){
                     var cookie = cookies[i].trim();
@@ -29,6 +29,7 @@
             return cookieValue;
         }
         var csrftoken = getToken('csrftoken');  
+        console.log('CSRFTOKEN:', csrftoken);
         
         function getCookie(nome){
             var cookieArr = document.cookie.split(";");
@@ -42,12 +43,14 @@
             }
             return null;
         }
-        var cart = JSON.parse(getCookie('cart'));
+                
+        var cart = JSON.parse(getCookie('cart'))
         if(cart == undefined){
             cart = {}
             console.log('Carrinho foi criado!')
             document.cookie = 'cart=' + JSON.stringify(cart) + ";domain=;path=/"
         }
+
         console.log('Cart:', cart)
     </script>
     
@@ -68,7 +71,7 @@
                     </li>            
                 </ul>
                 <div class="form-inline my-2 my-lg-0">
-                    <a href="#"class="btn btn-warning">Login</a>
+                    <!--<a href="#"class="btn btn-warning">Login</a>-->
                     
                     <a href="{% url 'cart' %}">
                         <img  id="cart-icon" src="{% static 'images/cart.png' %}">

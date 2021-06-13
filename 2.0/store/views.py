@@ -3,7 +3,8 @@ from django.http import JsonResponse
 import json
 import datetime
 from .models import *
-from .utils import cookieCart, cartData
+from .utils import cookieCart, cartData, guestPedido
+from django.views.decorators.csrf import csrf_exempt
 
 
 def store(request):
@@ -61,6 +62,7 @@ def updateItem(request):
     return JsonResponse('Item foi adicionado', safe=False)
 
 
+#@csrf_exempt
 def processPedido(request):
     transacao_id = datetime.datetime.now().timestamp()
     data = json.loads(request.body)
@@ -68,14 +70,15 @@ def processPedido(request):
     if request.user.is_authenticated:
         cliente = request.user.cliente
         pedido, created = Pedido.objects.get_or_create(cliente=cliente, completo=False)
-        total = float(data['form']['total'])
-        pedido.transacao_id = transacao_id
-
-        if total == float(pedido.get_cart_total):
-            pedido.completo = True
-        pedido.save()
-
     else:
-        print('Usuário não está logado...')
+        cliente, pedido = guestPedido(request, data)
 
-    return JsonResponse('Pagamento completo!', safe=False)
+    total = data['form']['total']
+    pedido.transacao_id = transacao_id
+
+    if total == pedido.get_cart_total:
+        pedido.completo = True
+    
+    pedido.save()
+
+    return JsonResponse('Pedido Finalizado!', safe=False)
