@@ -19,15 +19,7 @@ class Produto(models.Model):
     ]
     nome = models.CharField(max_length=200, verbose_name="Nome")
     categoria = models.CharField(max_length=100, choices=CATEGORY_CHOICES, verbose_name="Categoria")
-    marca = models.CharField(max_length=200, verbose_name="Marca")
-    base = models.CharField(max_length=200, verbose_name="Base")
     valor = models.DecimalField(max_digits=7, decimal_places=2, verbose_name="Valor")
-    caracteristicas = models.TextField(verbose_name="Características")
-    indicacao = models.TextField(verbose_name="Indicação")
-    utilidade = models.TextField(verbose_name="Utilidade")
-    ingredientes = models.TextField(verbose_name="Ingredientes")
-    mododeuso = models.TextField(verbose_name="Modo de Uso")
-    precaucoes = models.TextField(verbose_name="Precauções")
     imagem = models.ImageField(null=True, blank=True, verbose_name="Imagem")
 
     def __str__(self):
